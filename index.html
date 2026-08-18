@@ -3,325 +3,777 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sowndaravalli | Web Developer</title>
-<link rel="stylesheet" href="styles.css">
+<title>Sowndaravalli Madheswaran | Full Stack Web Developer</title>
+<meta name="description" content="Full Stack Developer in Sydney — responsive UIs, REST APIs, PHP, CakePHP, JavaScript, React, Node.js, MySQL and PostgreSQL. Authentication, automation, and production support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css?v=28">
 </head>
 <body>
-<header>
-<div class="hero-content">
-    <div class="hero-left">
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#top" class="logo" aria-label="Sowndaravalli.dev home">
+      <span class="logo-mark" aria-hidden="true">SM</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#summary">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#cases">Work</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
         <div class="hero-badge">
-            Available for Full Stack & Web Developer Opportunities
+          <span class="dot"></span>
+          Open to Full-Stack Roles · Sydney, NSW
         </div>
-        <h1>Sowndaravalli Madheswaran</h1>
-        <h2>Junior Full Stack Developer</h2>
-        <p class="hero-text">
-            Full Stack Developer with experience developing enterprise web applications
-            using PHP, CakePHP, JavaScript, MySQL and PostgreSQL.
-
-            Experience in business automation, authentication systems,
-            database-driven applications and application support.
+        <h1>
+          <span class="gradient-text">Sowndaravalli</span>
+          <span class="hero-surname">Madheswaran</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span>Full Stack Developer</span>
         </p>
-        <div class="contact-section">
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>ausowela@gmail.com</span>
-                </div>
-
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <span>0402 131 952</span>
-                </div>
-            </div>
-
-            <div class="social-links">
-
-                <a href="https://github.com/SowWeb"
-                target="_blank"
-                class="social-btn">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-
-                <a href="https://www.linkedin.com/in/sowndaravalli-madheswaran-aaa9032b9"
-                target="_blank"
-                class="social-btn">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-
-            </div>
+        <p class="hero-lead">
+          I build and maintain production web applications — responsive interfaces, REST APIs,
+          and secure database-driven features teams can rely on after go-live.
+        </p>
+        <ul class="hero-highlights">
+          <li><i class="fas fa-check"></i> ~1 year commercial full-stack development at OzCar Pty Ltd, Sydney</li>
+          <li><i class="fas fa-check"></i> Academic projects + freelance work as designer & developer</li>
+          <li><i class="fas fa-check"></i> PHP, CakePHP, JavaScript, React, Node.js, MySQL & PostgreSQL</li>
+        </ul>
+        <div class="hero-stack" aria-label="Core technologies">
+          <span>PHP</span>
+          <span>CakePHP</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>MySQL</span>
+          <span>REST APIs</span>
         </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="docs/Sowndaravalli_Madheswaran_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="https://github.com/SowWeb" class="btn btn-outline" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-wrapper">
+          <div class="profile-ring">
+            <img src="images/profileImg.jpg" alt="Sowndaravalli Madheswaran">
+          </div>
+          <a href="#experience" class="floating-card card-1" aria-label="View full stack experience">
+            <i class="fas fa-layer-group"></i> Full Stack
+          </a>
+          <a href="#case-auth" class="floating-card card-2" aria-label="View authentication case study">
+            <i class="fas fa-shield-halved"></i> Auth & Security
+          </a>
+          <a href="#skill-core" class="floating-card card-3" aria-label="View React and API skills">
+            <i class="fas fa-code"></i> React & APIs
+          </a>
+          <a href="#skill-databases" class="floating-card card-4" aria-label="View database skills">
+            <i class="fas fa-database"></i> MySQL & PostgreSQL
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="hero-right">
-        <img src="images/profileImg.jpg"
-            alt="Sowndaravalli"
-            class="profile-photo">
-    </div>
-</div>
+  </div>
 </header>
-<section>
-    <div class="card">
-        <h2>Professional Summary</h2>
-        <p>
-        Full Stack Web Developer with experience developing and supporting business web applications.
-        Strong background in PHP, CakePHP, JavaScript, Figma, MySQL and PostgreSQL with hands-on experience
-        delivering automation solutions, authentication systems, business process improvements and
-        database-driven applications.
 
-        Experienced working with stakeholders, analysing requirements,
-        troubleshooting production issues and delivering scalable software solutions.
+<section id="summary">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">About Me</span>
+      <h2>Background & Approach</h2>
+      <p>How I work — beyond the headline intro above.</p>
+    </div>
+    <div class="glass-card summary-card reveal card-motion">
+      <div class="summary-grid">
+        <div class="summary-block">
+          <h3><i class="fas fa-route"></i> My path</h3>
+          <p>
+            I came into web development through a Diploma in Front-End and Back-End Web
+            Development, building on an earlier engineering background. That mix helps me read
+            requirements carefully, break work into clear steps, and check outcomes before
+            handover — not just write code and move on.
+          </p>
+        </div>
+        <div class="summary-block">
+          <h3><i class="fas fa-building"></i> Commercial work</h3>
+          <p>
+            At OzCar I work on a live platform dealership staff use every day — mostly
+            non-technical users. The work that mattered most had a visible before and after:
+            MFA login replacing SMS, valuation rules tied to vehicle data, and bulk tools that
+            cut repetitive admin effort by an estimated 30–40%.
+          </p>
+        </div>
+        <div class="summary-block">
+          <h3><i class="fas fa-palette"></i> Design & freelance</h3>
+          <p>
+            I don't only write backend logic — I plan admin screens in Figma, build WordPress
+            sites for small businesses, and create Canva posters and social banners for clients.
+            Academic projects gave me the foundation; freelance work keeps the design side active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Tech Stack</span>
+      <h2>Skills & Technologies</h2>
+      <p>Tools and frameworks I use to build modern web applications.</p>
+    </div>
+    <div class="skills-wrapper">
+      <div class="skill-group reveal card-motion" id="skill-core">
+        <h3><i class="fas fa-star"></i> Core Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">PHP</span>
+          <span class="skill-tag highlight">CakePHP</span>
+          <span class="skill-tag highlight">JavaScript</span>
+          <span class="skill-tag highlight">React.js</span>
+          <span class="skill-tag highlight">Node.js</span>
+          <span class="skill-tag highlight">MySQL</span>
+          <span class="skill-tag highlight">REST APIs</span>
+          <span class="skill-tag highlight">HTML5 / CSS3</span>
+          <span class="skill-tag highlight">Bootstrap</span>
+          <span class="skill-tag highlight">Git / GitHub</span>
+        </div>
+      </div>
+      <div class="skill-group reveal card-motion" id="skill-databases">
+        <h3><i class="fas fa-layer-group"></i> Also Using</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Laravel</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">jQuery / AJAX</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Swagger</span>
+        </div>
+      </div>
+      <div class="skill-group reveal card-motion">
+        <h3><i class="fas fa-wrench"></i> Tools & Concepts</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Authentication</span>
+          <span class="skill-tag">Production Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Career</span>
+      <h2>Professional Experience</h2>
+      <p>Commercial, freelance and academic experience.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content card-motion">
+          <div class="timeline-header">
+            <h3>OzCar Pty Ltd — Full-Stack Web Developer</h3>
+            <span class="timeline-meta">Jul 2025 – Jul 2026 · Full-time</span>
+          </div>
+          <ul>
+            <li>Built front-end and back-end features for a commercial vehicle valuation system using PHP, CakePHP, JavaScript, AJAX and MySQL.</li>
+            <li>Automated valuation calculations based on vehicle age, kilometres and trade percentages.</li>
+            <li>Created secure OTP + QR authentication with Google & Microsoft Authenticator.</li>
+            <li>Developed pixel-perfect responsive UIs from design mock-ups using Bootstrap.</li>
+            <li>Delivered bulk processing tools cutting manual effort by 30–40%.</li>
+            <li>Automated inventory workflows, eliminating hours of repetitive work weekly.</li>
+            <li>Resolved production issues, cross-browser bugs and ongoing maintenance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content card-motion">
+          <div class="timeline-header">
+            <h3>Freelance Web Developer & Designer</h3>
+            <span class="timeline-meta">Ongoing · Part-time</span>
+          </div>
+          <ul>
+            <li>Small business websites in HTML, CSS, JavaScript, PHP and WordPress.</li>
+            <li>Canva posters, banners and basic branding for client promotions.</li>
+            <li>Requirements gathering, delivery and ongoing site maintenance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Case Studies</span>
+      <h2>Commercial Work</h2>
+      <p>Key projects at OzCar — enterprise systems with measurable business impact.</p>
+    </div>
+    <p class="confidential-banner reveal">
+      <i class="fas fa-lock"></i> Source code and internal details are confidential per company agreement.
+    </p>
+    <div class="cases-grid">
+      <div class="case-card reveal card-motion">
+        <div class="case-top">
+          <h3>Trade Parameters & Vehicle Valuation System</h3>
+          <div class="case-stack">
+            <span>PHP</span><span>CakePHP</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-col">
+            <h4>Problem</h4>
+            <p>Sales teams needed consistent, fast trade-in valuations. Manual calculations varied between staff.</p>
+          </div>
+          <div class="case-col">
+            <h4>Solution</h4>
+            <ul>
+              <li>Built valuation management modules with business rules.</li>
+              <li>Manufacturer & model management with search and CRUD.</li>
+              <li>Collaborated with stakeholders on real trade scenarios.</li>
+            </ul>
+          </div>
+          <div class="case-outcome">
+            <strong>Impact:</strong> Standardised valuations across the business, reducing pricing disputes and speeding up trade assessments.
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal card-motion" id="case-auth">
+        <div class="case-top">
+          <h3>Multi-Factor Authentication & QR Login</h3>
+          <div class="case-stack">
+            <span>PHP</span><span>TOTP</span><span>QR Code</span><span>Security</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-col">
+            <h4>Problem</h4>
+            <p>SMS OTP was costly and unreliable. Needed a secure, cost-effective alternative.</p>
+          </div>
+          <div class="case-col">
+            <h4>Solution</h4>
+            <ul>
+              <li>Built QR registration and TOTP authentication from scratch.</li>
+              <li>Integrated Google & Microsoft Authenticator apps.</li>
+              <li>Designed user-friendly setup screens for non-technical staff.</li>
+            </ul>
+          </div>
+          <div class="case-outcome">
+            <strong>Impact:</strong> Eliminated SMS costs and significantly improved login security across all staff accounts.
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal card-motion">
+        <div class="case-top">
+          <h3>Bulk Processing & Business Automation</h3>
+          <div class="case-stack">
+            <span>PHP</span><span>AJAX</span><span>Cron Jobs</span><span>MySQL</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-col">
+            <h4>Problem</h4>
+            <p>Admin teams spent hours on repetitive bulk processing, inventory updates and multi-location exports.</p>
+          </div>
+          <div class="case-col">
+            <h4>Solution</h4>
+            <ul>
+              <li>Built bulk processing with AJAX progress tracking.</li>
+              <li>Automated inventory workflows via scheduled processes.</li>
+              <li>Added role-based permissions and access controls.</li>
+            </ul>
+          </div>
+          <div class="case-outcome">
+            <strong>Impact:</strong> Cut manual processing by 30–40% and saved several hours of repetitive work each week.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">UI / UX</span>
+      <h2>Design Work</h2>
+      <p>
+        Figma wireframes planned before development. Commercial work is
+        <strong>anonymised</strong> — no real QR codes, logos or internal OzCar details in shared files.
+      </p>
+    </div>
+    <div class="design-grid">
+      <div class="design-card reveal card-motion">
+        <div class="design-img design-photo design-bg-indian has-image"
+             role="img"
+             aria-label="Designer Indian Dress — Indian ethnic wear website prototype in Figma">
+          <a href="https://www.figma.com/proto/VSYzQaNKIY6TWpIxe2Edwx/Figma-web1st?t=12OpIbe4wVsMOhfd-1&scaling=contain&content-scaling=responsive&page-id=0%3A1&node-id=3-2&starting-point-node-id=10%3A50&device-frame=0"
+             class="design-overlay"
+             target="_blank"
+             rel="noopener"
+             aria-label="Open Indian ethnic wear website Figma prototype">
+            <i class="fab fa-figma"></i> View in Figma
+          </a>
+        </div>
+        <div class="design-body">
+          <span class="design-tool figma">Figma · Website Prototype</span>
+          <h3>Designer Indian Dress — Landing Page</h3>
+          <p>
+            Figma prototype for an <strong>Indian ethnic wear</strong> website — wireframe-style
+            landing page with navigation, hero section, product gallery and call-to-action.
+            Planned layout before development for a boutique dress brand.
+          </p>
+          <ul class="design-scope">
+            <li>Header nav — Home, Dress, Delivery, Sign Up/In</li>
+            <li>Hero with collection showcase and promotional badges</li>
+            <li>Product gallery and “Click Here” call-to-action</li>
+          </ul>
+        </div>
+      </div>
+      <div class="design-card design-featured reveal card-motion">
+        <div class="design-img design-photo design-bg-auth has-image"
+             role="img"
+             aria-label="Anonymised authenticator login wireframe">
+          <a href="https://www.figma.com/proto/lzPUP9XhNPGufPwTaZ6lYi/Untitled?node-id=0-1&t=wsQRRjwOnQYXAFp9-1"
+             class="design-overlay"
+             target="_blank"
+             rel="noopener"
+             aria-label="Open authenticator Figma wireframes">
+            <i class="fab fa-figma"></i> View in Figma
+          </a>
+        </div>
+        <div class="design-body">
+          <span class="design-tool figma">Figma · Login Flow</span>
+          <h3>Authenticator Setup (Separate)</h3>
+          <p>
+            A <strong>separate wireframe</strong> for staff login and authenticator setup — not
+            mixed into admin dashboard pages. Shows generic QR placeholder and verification
+            steps only; real OzCar QR codes are confidential and not published.
+          </p>
+          <ul class="design-scope">
+            <li>Standalone login / setup screens</li>
+            <li>QR placeholder (no real scannable code)</li>
+            <li>Verification and OTP field layout</li>
+          </ul>
+        </div>
+      </div>
+      <div class="design-card reveal card-motion">
+        <div class="design-img design-photo has-image">
+          <img src="images/Indian Ethinic wear Promotion Poster.jpg"
+               alt="Indian ethnic wear promotion poster designed in Canva"
+               loading="lazy">
+          <a href="https://canva.link/bbkxj8jysdxdq12"
+             class="design-overlay"
+             target="_blank"
+             rel="noopener"
+             aria-label="View Indian ethnic wear promotion poster in Canva">
+            <i class="fas fa-external-link-alt"></i> View in Canva
+          </a>
+        </div>
+        <div class="design-body">
+          <span class="design-tool canva">Canva</span>
+          <h3>Indian Ethnic Wear Promotion Poster</h3>
+          <p>
+            Canva promotional poster for an Indian ethnic wear brand — festive colours,
+            clear product focus and layout suited for shop displays and social media.
+          </p>
+        </div>
+      </div>
+      <div class="design-card reveal card-motion">
+        <div class="design-img design-photo">
+          <div class="design-placeholder">
+            <i class="fas fa-image"></i>
+            <span>Social graphic preview</span>
+          </div>
+          <img src="images/A2Z.jpg"
+               alt="A2Z Recycler social media banner designed in Canva"
+               loading="lazy">
+          <a href="https://canva.link/smnjt3zqtksb5b9"
+             class="design-overlay"
+             target="_blank"
+             rel="noopener"
+             aria-label="View A2Z social media banner in Canva">
+            <i class="fas fa-external-link-alt"></i> View in Canva
+          </a>
+        </div>
+        <div class="design-body">
+          <span class="design-tool canva">Canva</span>
+          <h3>A2Z Recycler Social Banner</h3>
+          <p>
+            Canva social media banner for A2Z Recycler — sustainability messaging, bold
+            layout and branding for online promotion and awareness campaigns.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Portfolio</span>
+      <h2>Academic & Personal Projects</h2>
+      <p>Academic builds, freelance CMS work and personal projects — with details on what was delivered.</p>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card reveal card-motion">
+        <div class="project-top">
+          <span class="project-type">Frontend</span>
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-media">
+          <img src="images/TiptoeSole.jpg" alt="TipToe Sole website screenshot" loading="lazy">
+          <a href="https://github.com/SowWeb/TiptoeShoes" class="project-overlay" target="_blank" rel="noopener" aria-label="View TipToe Sole on GitHub">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="project-content">
+          <h3>TipToe Sole</h3>
+          <p>Responsive footwear e-commerce website with a clean layout and user-friendly shopping flow.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/SowWeb/TiptoeShoes" class="project-btn" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal card-motion">
+        <div class="project-top">
+          <span class="project-type">Frontend</span>
+          <span class="project-num">02</span>
+        </div>
+        <div class="project-media">
+          <img src="images/A2Z recycle.jpg" alt="A2Z Recycler website screenshot" loading="lazy">
+          <a href="https://github.com/SowWeb/A2ZRecycleProject" class="project-overlay" target="_blank" rel="noopener" aria-label="View A2Z Recycler on GitHub">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="project-content">
+          <h3>A2Z Recycler</h3>
+          <p>Sustainability website promoting recycling, environmental awareness and community engagement.</p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/SowWeb/A2ZRecycleProject" class="project-btn" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card project-featured reveal card-motion">
+        <div class="project-top">
+          <span class="project-type featured">Full-Stack</span>
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-media">
+          <img src="images/LMS.jpg" alt="Library Management System screenshot" loading="lazy">
+          <a href="https://github.com/SowWeb/LibraryManagementSystem" class="project-overlay" target="_blank" rel="noopener" aria-label="View Library Management System on GitHub">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="project-content">
+          <h3>Library Management System</h3>
+          <p>Web-based library app with login, book management, borrowing logic and full CRUD with MySQL.</p>
+          <div class="project-tech">
+            <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+          <a href="https://github.com/SowWeb/LibraryManagementSystem" class="project-btn" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal card-motion">
+        <div class="project-top">
+          <span class="project-type js">JavaScript</span>
+          <span class="project-num">04</span>
+        </div>
+        <div class="project-media">
+          <img src="images/Gelos.jpg" alt="Gelos Enterprises website screenshot" loading="lazy">
+          <a href="https://github.com/SowWeb/JavaScriptProject" class="project-overlay" target="_blank" rel="noopener" aria-label="View Gelos Enterprises JavaScript project on GitHub">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="project-content">
+          <h3>Gelos Enterprises</h3>
+          <p>Academic JavaScript project — training institute site with client-side form validation, dynamic course display and interactive enquiry handling.</p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/SowWeb/JavaScriptProject" class="project-btn" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card reveal card-motion">
+        <div class="project-top">
+          <span class="project-type seo">SEO</span>
+          <span class="project-num">05</span>
+        </div>
+        <div class="project-media">
+          <img src="images/CafeSEO.jpg" alt="Banks Road Roasters website screenshot" loading="lazy">
+          <a href="https://github.com/SowWeb/SEOAnalaysis" class="project-overlay" target="_blank" rel="noopener" aria-label="View Banks Road Roasters on GitHub">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="project-content">
+          <h3>Banks Road Roasters</h3>
+          <p>Café website built with SEO, accessibility and responsive design as the main focus.</p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>SEO</span>
+          </div>
+          <a href="https://github.com/SowWeb/SEOAnalaysis" class="project-btn" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="cms-showcase reveal card-motion" id="cms-project">
+      <div class="cms-showcase-header">
+        <div>
+          <span class="project-type cms">CMS · WordPress</span>
+          <h3>WordPress CMS Demo Site</h3>
+          <p class="cms-intro">
+            A separate WordPress CMS demo — not one of the coded academic cards above — built to
+            show installation, theme setup, plugin configuration and image uploads through the
+            media library. Sample page content reuses themes from my academic work as placeholder
+            text. Watch the video for the full admin panel and CMS workflow walkthrough.
+          </p>
+        </div>
+        <div class="cms-visual cms-macbook">
+          <div class="macbook-notch-bar">
+            <span class="mac-dot red"></span>
+            <span class="mac-dot yellow"></span>
+            <span class="mac-dot green"></span>
+          </div>
+          <video controls playsinline preload="metadata" aria-label="WordPress CMS demo site walkthrough">
+            <source src="images/macbook.mp4" type="video/mp4">
+            Your browser does not support video playback.
+          </video>
+        </div>
+      </div>
+
+      <div class="cms-details-grid">
+        <div class="cms-detail-block">
+          <h4><i class="fas fa-cog"></i> Setup & Structure</h4>
+          <ul>
+            <li>WordPress installation and site configuration</li>
+            <li>Theme setup and responsive page layout</li>
+            <li>Home, About, Services and Contact pages</li>
+            <li>Navigation menus and footer links</li>
+          </ul>
+        </div>
+        <div class="cms-detail-block">
+          <h4><i class="fas fa-plug"></i> Plugins & Media</h4>
+          <ul>
+            <li>Plugin search, install and activation</li>
+            <li>Contact forms and basic site features via plugins</li>
+            <li>Images uploaded and managed in the media library</li>
+            <li>Content updated through the WordPress admin panel</li>
+          </ul>
+        </div>
+        <div class="cms-detail-block">
+          <h4><i class="fas fa-edit"></i> CMS Experience</h4>
+          <ul>
+            <li>Pages and posts created and edited in WP admin</li>
+            <li>Headings, text and images changed without code</li>
+            <li>Mobile-friendly, responsive front-end output</li>
+            <li>Hands-on CMS workflow from setup to content publish</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cms-footer">
+        <div class="project-tech">
+          <span>WordPress</span>
+          <span>Plugins</span>
+          <span>Media Library</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+        <p class="cms-note">
+          <i class="fas fa-play-circle"></i>
+          Watch the demo video above — a walkthrough of the CMS site, admin panel, plugins and image management.
         </p>
+      </div>
     </div>
-    <div class="card">
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <span class="skill">PHP</span>
-            <span class="skill">CakePHP</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">jQuery</span>
-            <span class="skill">HTML5</span>
-            <span class="skill">CSS3</span>
-            <span class="skill">Bootstrap</span>
-            <span class="skill">Python</span>
-            <span class="skill">MySQL</span>
-            <span class="skill">PostgreSQL</span>
-            <span class="skill">MongoDB</span>
-            <span class="skill">REST API</span>
-            <span class="skill">Git</span>
-            <span class="skill">GitHub</span>
-            <span class="skill">WordPress</span>
-            <span class="skill">Figma</span>
-            <span class="skill">Postman</span>
-        </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Background</span>
+      <h2>Education & Interests</h2>
     </div>
-    <div class="card">
-        <h2>Professional Experience - OzCar</h2>
-        <p>
-            The following projects were developed as part of my professional role at OzCar.
-            Due to company confidentiality agreements, source code, screenshots and internal
-            system details cannot be shared publicly.
-        </p>
-        <div class="ozcar-project">
-            <h3>Trade Parameters & Vehicle Valuation System</h3>
-            <p>
-                Developed and enhanced a vehicle valuation platform used by sales teams
-                to assess trade-in vehicles and apply business valuation rules.
-            </p>
-            <p>
-                <strong>Technologies:</strong>
-                PHP, CakePHP, MySQL, JavaScript, jQuery, Bootstrap, AJAX
-            </p>
-            <h4>Key Contributions</h4>
-            <ul>
-                <li>Developed frontend and backend functionality for vehicle valuation management.</li>
-                <li>Built manufacturer and model management screens with search, add and edit functionality.</li>
-                <li>Implemented valuation rules based on vehicle age, kilometres travelled and trade value percentages.</li>
-                <li>Developed database queries and business logic used during vehicle assessments.</li>
-                <li>Collaborated with business users and sales teams to ensure valuation accuracy.</li>
-            </ul>
-            <p>
-                <strong>Business Impact:</strong>
-                Improved consistency of vehicle valuations across the business and supported sales teams with accurate trade assessments.
-            </p>
+    <div class="edu-grid">
+      <div class="edu-card reveal card-motion">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div>
+          <h4>Diploma of Information Technology</h4>
+          <span>Front-End & Back-End Web Development</span>
         </div>
-        <div class="ozcar-project">
-            <h3>Multi-Factor Authentication (MFA) & QR Code Login</h3>
-            <p>
-                Developed an authentication solution that replaced SMS-based OTP verification
-                with authenticator app-based login using QR code registration and TOTP authentication.
-            </p>
-            <p>
-                <strong>Technologies:</strong>
-                PHP, CakePHP, JavaScript, QR Code Libraries, OTP Authentication
-            </p>
-            <h4>Key Contributions</h4>
-            <ul>
-                <li>Developed QR code registration and authentication workflows.</li>
-                <li>Integrated Google Authenticator and Microsoft Authenticator support.</li>
-                <li>Implemented OTP generation and verification functionality.</li>
-                <li>Built setup and verification screens for staff users.</li>
-                <li>Performed testing, troubleshooting and deployment support.</li>
-            </ul>
-            <p>
-                <strong>Business Impact:</strong>
-                Reduced SMS authentication costs and improved application security.
-            </p>
+      </div>
+      <div class="edu-card reveal card-motion">
+        <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+        <div>
+          <h4>Certificate IV in Information Technology</h4>
+          <span>Web Development</span>
         </div>
-        <div class="ozcar-project">
-            <h3>Bulk Week Locking Automation</h3>
-            <p>
-                Developed a bulk processing solution used by administration teams to lock
-                and export sales log data across multiple dealership locations.
-            </p>
-            <p>
-                <strong>Technologies:</strong>
-                PHP, CakePHP, MySQL, AJAX, JavaScript
-            </p>
-            <h4>Key Contributions</h4>
-            <ul>
-                <li>Built interfaces for processing multiple dealership locations simultaneously.</li>
-                <li>Developed backend logic for bulk locking and exporting sales data.</li>
-                <li>Created database tables to track request processing and status updates.</li>
-                <li>Implemented AJAX-based progress tracking for long-running operations.</li>
-                <li>Added role-based permissions and access controls.</li>
-            </ul>
-            <p>
-                <strong>Business Impact:</strong>
-                Reduced manual administration effort and improved operational efficiency.
-            </p>
+      </div>
+      <div class="edu-card reveal card-motion">
+        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+        <div>
+          <h4>Certificate III in Information Technology</h4>
+          <span>Information Technology</span>
         </div>
-        <div class="ozcar-project">
-            <h3>Business Automation & System Enhancements</h3>
-            <p>
-                Contributed to multiple application enhancements, automation projects
-                and production support activities across the OzCar platform.
-            </p>
-            <p>
-                <strong>Technologies:</strong>
-                PHP, CakePHP, MySQL, JavaScript, REST APIs, Cron Jobs
-            </p>
-            <h4>Key Contributions</h4>
-            <ul>
-                <li>Developed SMS notification functionality and customer subscription controls.</li>
-                <li>Implemented role-based access controls and permission-based features.</li>
-                <li>Developed reusable CakePHP libraries and shared components.</li>
-                <li>Created and maintained scheduled Cron jobs for automation.</li>
-                <li>Performed bug fixes, database updates, testing and production support.</li>
-            </ul>
-            <p>
-                <strong>Business Impact:</strong>
-                Improved business processes, system reliability and operational efficiency.
-            </p>
+      </div>
+      <div class="edu-card reveal card-motion">
+        <div class="edu-icon"><i class="fas fa-building"></i></div>
+        <div>
+          <h4>Bachelor of Engineering</h4>
+          <span>Civil Engineering → Career switch to Web Dev</span>
         </div>
+      </div>
     </div>
-    <div class="card">
-
-        <h2>Academic Projects</h2>
-        <p class="section-intro">
-            Projects completed during academic studies and personal development,
-            demonstrating skills in frontend development, PHP applications,
-            database design and responsive web development.
-        </p>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project">
-                <img src="images/TiptoeSole.jpg" alt="TipToe Sole Website" width="200px" height="250px">
-                <div class="project-content">
-                    <h3>TipToe Sole Website</h3>
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <p>
-                        Responsive footwear e-commerce website focused on
-                        modern UI design and user-friendly shopping experience.
-                    </p>
-                    <a href="https://github.com/SowWeb/TiptoeShoes"
-                    target="_blank"
-                    class="project-btn">
-                        View Source Code
-                    </a>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project">
-
-                <img src="images/A2Z recycle.jpg" alt="A2Z Recycler Website">
-
-                <div class="project-content">
-
-                    <h3>A2Z Recycler Website</h3>
-
-                    <div class="tech-stack">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <p>
-                        Sustainability-focused website promoting recycling,
-                        environmental awareness and community engagement.
-                    </p>
-
-                    <a href="https://github.com/SowWeb/A2ZRecycleProject"
-                    target="_blank"
-                    class="project-btn">
-                        View Source Code
-                    </a>
-
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project">
-                <img src="images/LMS.jpg" alt="Library Management System">
-                <div class="project-content">
-                    <h3>Library Management System</h3>
-                    <div class="tech-stack">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <p>
-                        Web-based library system with authentication,
-                        book management and borrowing functionality.
-                    </p>
-                    <a href="https://github.com/SowWeb/LibraryManagementSystem"
-                    target="_blank"
-                    class="project-btn">
-                        View Source Code
-                    </a>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="project">
-                <img src="images/Gelos.jpg" alt="Gelos Enterprises">
-                <div class="project-content">
-                    <h3>Gelos Enterprises</h3>
-                    <div class="tech-stack">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <p>
-                        Training institute website featuring course information,
-                        enquiries and responsive layouts.
-                    </p>
-                    <a href="https://github.com/SowWeb/JavaScriptProject"
-                    target="_blank"
-                    class="project-btn">
-                        View Source Code
-                    </a>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="project">
-                <img src="images/CafeSEO.jpg" alt="Banks Road Roasters">
-                <div class="project-content">
-                    <h3>Banks Road Roasters</h3>
-                    <div class="tech-stack">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>SEO</span>
-                    </div>
-                    <p>
-                        SEO-focused café website designed for accessibility,
-                        responsiveness and search visibility.
-                    </p>
-                    <a href="https://github.com/SowWeb/SEOAnalaysis"
-                    target="_blank"
-                    class="project-btn">
-                        View Source Code
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="origin-box reveal">
+      <p>
+        I trained as a <strong>Civil Engineer</strong> before making a deliberate move into web development.
+        The engineering mindset — plan before you build, understand constraints, check your work — carries over
+        into every project I deliver today.
+      </p>
+      <div class="interests">
+        <span class="interest-pill"><i class="fas fa-table-tennis-paddle-ball"></i> Badminton</span>
+        <span class="interest-pill"><i class="fas fa-palette"></i> Web Design</span>
+        <span class="interest-pill"><i class="fas fa-rocket"></i> Learning New Tech</span>
+      </div>
     </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="glass-card contact-box reveal card-motion">
+      <span class="contact-tag">Get in touch</span>
+      <h2>Let's Work Together</h2>
+      <p>Looking for a motivated full-stack developer? I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:ausowela@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i> ausowela@gmail.com
+        </a>
+        <a href="tel:0402131952" class="contact-link">
+          <i class="fas fa-phone"></i> 0402 131 952
+        </a>
+        <a href="https://www.linkedin.com/in/sowndaravalli-madheswaran-aaa9032b9" class="contact-link" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/SowWeb" class="contact-link" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
-    © 2026 Sowndaravalli Portfolio
+  <p>© 2024 Sowndaravalli Madheswaran</p>
 </footer>
+
+<script>
+  const navbar = document.getElementById("navbar");
+  const navMenu = document.getElementById("navMenu");
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.querySelectorAll(".nav-menu a");
+
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => navMenu.classList.remove("open"));
+  });
+
+  const sections = document.querySelectorAll("section, header.hero");
+
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach((section) => {
+    if (section.id) spyObserver.observe(section);
+  });
+  document.querySelectorAll(".design-img img").forEach((img) => {
+    const hidePlaceholder = () => {
+      img.closest(".design-img")?.classList.add("has-image");
+    };
+    img.addEventListener("load", hidePlaceholder);
+    img.addEventListener("error", () => {
+      img.style.display = "none";
+    });
+    if (img.complete && img.naturalWidth > 0) {
+      hidePlaceholder();
+    }
+  });
+</script>
+
 </body>
 </html>
