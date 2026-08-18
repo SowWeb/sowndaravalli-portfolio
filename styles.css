@@ -657,7 +657,7 @@ section:nth-of-type(even) {
   transform: none;
 }
 
-/* Animated cards — hover only, no scroll motion */
+/* Animated cards - hover only, no scroll motion */
 .card-motion {
   position: relative;
   overflow: hidden;
