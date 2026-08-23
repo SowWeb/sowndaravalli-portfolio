@@ -10,6 +10,42 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="styles.css?v=28">
+<!-- Google Analytics (GA4). Replace G-XXXXXXXXXX with your Measurement ID. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  (function () {
+    var measurementId = "G-XXXXXXXXXX";
+    var host = location.hostname;
+    var isLocal = host === "localhost" || host === "127.0.0.1" || host === "";
+
+    try {
+      var params = new URLSearchParams(location.search);
+      if (params.get("internal") === "1") {
+        localStorage.setItem("ga_internal", "1");
+      }
+      if (params.get("internal") === "0") {
+        localStorage.removeItem("ga_internal");
+      }
+    } catch (e) {}
+
+    if (isLocal) return;
+
+    var isInternal = false;
+    try {
+      isInternal = localStorage.getItem("ga_internal") === "1";
+    } catch (e) {}
+
+    if (isInternal) {
+      gtag("set", { traffic_type: "internal" });
+    }
+
+    gtag("config", measurementId);
+  })();
+</script>
 </head>
 <body>
 
